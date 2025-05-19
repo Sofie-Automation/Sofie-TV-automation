@@ -1,4 +1,4 @@
-# NRK Sofie TV Automation
+# Sofie TV Automation
 
 ![The producer's view in Sofie](https://raw.githubusercontent.com/nrkno/Sofie-TV-automation/master/images/Sofie_GUI_example.jpg)
 
