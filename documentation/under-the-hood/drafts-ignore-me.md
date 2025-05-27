@@ -48,21 +48,21 @@ We have a few tools that help the producer check if everything will play out cor
 
 Sofie also has pages for status monitoring and configuration. The status page gives information about the state of all the connected devices and is especially useful for support crew. The configuration pages are intended for installation and allow extensive configuration of the studio installation, layers and devices as well upgrading the database after a system update and uploading [blueprints](concepts-and-architecture.md#blueprints). For the presenter we offer a special screen containing information about the current and next Part, for example which camera is currently live or how long the current media item will be playing for. We also offer a teleprompter view that displays the script and can automatically scroll to the right Segments and Parts while the show progresses. This auto scrolling is especially useful during rehearsal when you might not play back through the show in a linear manner.
 
-## During the show 
+## During the show
 
 While producing the show, we give the producer what we call the “next” screen on the multiviewer. This essentially always shows the producer what source they are going to switch to next. But it is not limited to just the mixer: for example, it can also show the next item for playback. And in theory, this could be extended to any part of the show, for example scripts or camera robotics. Another tool the producer has available are _Ad-Libs_, from the latin ad libitum. _Global Ad-Libs_ are available throughout the entire show, this could be cameras and remote inputs. Other _Ad-Libs_ are context aware and may only become available when the producer is in a _Part_ where they can be used. During the whole show Sofie can send metadata to external systems, such as indexing and timing information.
 
 
 
-## Blueprints 
+## Blueprints
 
 The _blueprints_ are a key part of a Sofie installation, giving the system it's flexibility. _Blueprints_ are a set of JavaScript scripts that take any input rundown data, from for example ENPS, and transform it into elements that can be played back by Sofie. This is a really powerful concept, because the _blueprint programmer_ is free to put in any logic they see fit, relieving duties from journalists and producers that can be automated. Using web-standard JavaScript means that there is no custom scripting language to learn and there is a large pool of developers available. Additional tools are available to make Sofie _blueprint_ development quick and easy in an _Integrated Development Environment_, like [Visual Studio Code](https://code.visualstudio.com/) or [Atom](https://atom.io/), with features such as auto-complete or being able to see how changes in the blueprints affect the output in real time!
 
-## Device support 
+## Device support
 
 We currently \(August 2019\) support the Blackmagic Atem range, CasparCG and Quantel for playback, HyperDeck for recording and can control Pharos lighting systems and Panasonic PTZ cameras. Through the Sisyfos controller application we have support for Behringer, Midas and MIDI-compatible sound mixers. We also have support for the Ember+, OSC, HTTP and TCP protocols that allows us to control many more devices: audio mixers, lightning systems, tally lights, etc.
 
-## Architecture 
+## Architecture
 
 The spine of a Sofie installation is the server-core: it serves the React-based UI to the user, connects to the Database and processes incoming and outgoing data using _Blueprints_. The server-core is built using [Meteor](https://www.meteor.com/).
 

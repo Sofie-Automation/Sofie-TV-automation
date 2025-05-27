@@ -16,7 +16,7 @@ services:
 
   core:
     hostname: core
-    image: sofietv/tv-automation-server-core:master
+    image: sofietv/tv-automation-server-core:main
     restart: always
     ports:
       - "3000:3000" # Same port as meteor uses by default
@@ -32,7 +32,7 @@ services:
       - db
 
   playout-gateway:
-    image: sofietv/tv-automation-playout-gateway:master
+    image: sofietv/tv-automation-playout-gateway:main
     restart: always
     command: yarn start -host core -port 3000
     networks:
@@ -52,7 +52,7 @@ services:
   #     - core
 
   # mos-gateway:
-  #   image: sofietv/tv-automation-mos-gateway:master
+  #   image: sofietv/tv-automation-mos-gateway:main
   #   restart: always
   #   ports:
   #     - "10540:10540" # MOS Lower port
@@ -65,7 +65,7 @@ services:
   #     - core
 
   # inews-gateway:
-  #   image: olzzon/tv2-inews-ftp-gateway:master
+  #   image: olzzon/tv2-inews-ftp-gateway:main
   #   restart: always
   #   command: yarn start -host core -port 3000
   #   networks:

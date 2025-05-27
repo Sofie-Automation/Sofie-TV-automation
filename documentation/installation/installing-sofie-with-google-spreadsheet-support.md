@@ -17,14 +17,14 @@ description: >-
 ## Setting up Sofie to support Spreadsheets
 
 {% hint style="info" %}
-The Spreadsheet support comes in two halves:  
-The **Spreadsheet Gateway;** which reads _spreadsheets_ from Google Drive and inputs them as rundowns into Sofie  
+The Spreadsheet support comes in two halves:
+The **Spreadsheet Gateway;** which reads _spreadsheets_ from Google Drive and inputs them as rundowns into Sofie
 and **Blueprints**; which transforms the rundowns into playable elements.
 {% endhint %}
 
 ### Blueprints
 
-These [_generic spreadsheet blueprints_](https://github.com/SuperFlyTV/sofie-blueprints-spreadsheet) can handle a generic show and provide basic functionality.  
+These [_generic spreadsheet blueprints_](https://github.com/SuperFlyTV/sofie-blueprints-spreadsheet) can handle a generic show and provide basic functionality.
 Begin by buildin these and upload them into Sofie Core.
 
 {% hint style="info" %}
@@ -128,7 +128,7 @@ Controlling these devices is possible, but requires blueprint customization.
 * Light control
 * MAM support, transfer files from a MAM or remote file storage.
 
-### 
+###
 
 
 

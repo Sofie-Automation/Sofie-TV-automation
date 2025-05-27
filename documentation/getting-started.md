@@ -30,7 +30,7 @@ After filling out the form, click "Run Migration Procedure". If you have left fi
 
 Sofie Core doesn't play anything out by itself, instead it relies on the _Gateways;_ separate applications that connects to it and do the dirty-work.
 
-It surely will need a [**Playout gateway**](https://github.com/nrkno/tv-automation-playout-gateway) \( [installation instructions](installation/installing-a-gateway.md)\), and some others too.
+It surely will need a [**Playout gateway**](https://github.com/Sofie-Automation/sofie-core/tree/main/packages/playout-gateway) \( [installation instructions](installation/installing-a-gateway.md)\), and some others too.
 
 {% hint style="info" %}
 Your exact setup and which Gateways to install depends on the features you want to have.

@@ -4,13 +4,13 @@
 
 ![Example of a Sofie setup with a Playout Gateway and a Spreadsheet Gateway](../../.gitbook/assets/frame%20%287%29%20%287%29%20%285%29.png)
 
-\*\*\*\*[**Sofie Core**](dictionary.md#sofie-core) is a web-server and communicates with the web GUI.  
+\*\*\*\*[**Sofie Core**](dictionary.md#sofie-core) is a web-server and communicates with the web GUI.
 [Gateways](dictionary.md#gateways) are applications that are connected to Sofie Core and exchanges data; such as rundown-data for ingest or the [timeline ](dictionary.md#timeline)for play-out.
 
-The rundown-data is fed into Sofie Core via the **Ingest Gateway** \(in this example it's a Spreadsheet Gateway, it could also be a MOS Gateway or some other ingest-type Gateway\).  
+The rundown-data is fed into Sofie Core via the **Ingest Gateway** \(in this example it's a Spreadsheet Gateway, it could also be a MOS Gateway or some other ingest-type Gateway\).
 The rundown-data is then interpreted by the Blueprints and stored in the Core database.
 
-The end user controls the show via the web-interface. A show is mainly driven by the user [Take](dictionary.md#take-point):ing the next [Part](dictionary.md#part) in the Rundown.  
+The end user controls the show via the web-interface. A show is mainly driven by the user [Take](dictionary.md#take-point):ing the next [Part](dictionary.md#part) in the Rundown.
 Upon a Take, Sofie Core calculates what's going to be played, in the form of a new [timeline](dictionary.md#timeline) and sends it to Playout Gateway.
 
 Read more: [Timeline](concepts-and-architecture.md#timeline)
@@ -27,26 +27,26 @@ The blueprints are custom-made and changes depending on the show style, type of 
 
 The blueprints are webpacked javascript bundles which is uploaded into Sofie via the GUI.
 
-When [Sofie Core](dictionary.md#sofie-core) calls upon a Blueprint, it returns an js-object containing methods callable by Sofie Core. These methods will be called by Sofie Core in different situations, depending on the method.  
+When [Sofie Core](dictionary.md#sofie-core) calls upon a Blueprint, it returns an js-object containing methods callable by Sofie Core. These methods will be called by Sofie Core in different situations, depending on the method.
 Documentation on these interfaces are available in the typings-library [Blueprints integration](https://www.npmjs.com/package/tv-automation-sofie-blueprints-integration).
 
 ### **System Blueprints**
 
-Handle things on the _System level_.  
-Documentation on the interface to be exposed by the Blueprint:  
-[https://github.com/nrkno/tv-automation-sofie-blueprints-integration/blob/master/src/api.ts\#L52](https://github.com/nrkno/tv-automation-sofie-blueprints-integration/blob/master/src/api.ts#L52)
+Handle things on the _System level_.
+Documentation on the interface to be exposed by the Blueprint:
+[https://github.com/nrkno/tv-automation-sofie-blueprints-integration/blob/main/src/api.ts\#L52](https://github.com/nrkno/tv-automation-sofie-blueprints-integration/blob/main/src/api.ts#L52)
 
 ### **Studio Blueprints**
 
-Handle things on the _Studio level_, like "which showstyle to use for this rundown".  
-Documentation on the interface to be exposed by the Blueprint:  
-[https://github.com/nrkno/tv-automation-sofie-blueprints-integration/blob/master/src/api.ts\#L57](https://github.com/nrkno/tv-automation-sofie-blueprints-integration/blob/master/src/api.ts#L57)
+Handle things on the _Studio level_, like "which showstyle to use for this rundown".
+Documentation on the interface to be exposed by the Blueprint:
+[https://github.com/nrkno/tv-automation-sofie-blueprints-integration/blob/main/src/api.ts\#L57](https://github.com/nrkno/tv-automation-sofie-blueprints-integration/blob/main/src/api.ts#L57)
 
 ### **Showstyle Blueprints**
 
-Handle things on the _Showstyle level_, like generating [_Baseline_](dictionary.md#baseline), _Segments_, _Parts, Pieces_ and _Timelines_ in a rundown.  
-Documentation on the interface to be exposed by the Blueprint:  
-[https://github.com/nrkno/tv-automation-sofie-blueprints-integration/blob/master/src/api.ts\#L72](https://github.com/nrkno/tv-automation-sofie-blueprints-integration/blob/master/src/api.ts#L72)
+Handle things on the _Showstyle level_, like generating [_Baseline_](dictionary.md#baseline), _Segments_, _Parts, Pieces_ and _Timelines_ in a rundown.
+Documentation on the interface to be exposed by the Blueprint:
+[https://github.com/nrkno/tv-automation-sofie-blueprints-integration/blob/main/src/api.ts\#L72](https://github.com/nrkno/tv-automation-sofie-blueprints-integration/blob/main/src/api.ts#L72)
 
 ## Timeline
 
@@ -54,7 +54,7 @@ Documentation on the interface to be exposed by the Blueprint:
 
 The Timeline is a collection of timeline-objects, that together form a "target state", ie an intent on what is to be played and at what times.
 
-The timeline-objects can be programmed to contain relative references to each other, so programming things like _"play this thing right after this other thing"_  is as easy as `{start: { #otherThing.end }}` 
+The timeline-objects can be programmed to contain relative references to each other, so programming things like _"play this thing right after this other thing"_  is as easy as `{start: { #otherThing.end }}`
 
 The [Playout Gateway](libraries.md#gateways) picks up the timeline from Sofie Core and \(using the [timeline-state-resolver](https://github.com/nrkno/tv-automation-state-timeline-resolver)\) controls the play-out devices to make sure that they actually play what is intended.
 
@@ -66,7 +66,7 @@ The Sofie system is made to work with a modern web- and IT-based approach in min
 
 ![Sofie Core can run in the cloud](../../.gitbook/assets/sofie-web-architecture%20%281%29.png)
 
-One drawback of running in a cloud over the public internet is the sometimes unpredictable latency. The Timeline overcomes this by moving all the immediate control of the play-out devices to the Playout Gateway, which is intended to run on a local network, close to the hardware it controls.  
+One drawback of running in a cloud over the public internet is the sometimes unpredictable latency. The Timeline overcomes this by moving all the immediate control of the play-out devices to the Playout Gateway, which is intended to run on a local network, close to the hardware it controls.
 This also gives the system a simple way of load-balancing - since the number of web-clients or load on Sofie Core won't affect the play-out.
 
 Another benefit of basing the play-out on a timeline is that when programming the show \(the blueprints\), you only have to care about "what you want to happen", you don't have to care about cleaning up previously played things, or what was actually played out before. Those are things that are handled by the Playout Gateway automatically. This also allows the user to jump around in a rundown freely, without the risk of things going wrong on air.

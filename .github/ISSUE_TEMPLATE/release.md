@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-_In the Sofie-project at NRK we work in sprints, generally 2-3 weeks long and we'll communicate the status of each release here. The releases are also documented [here](https://nrkno.github.io/sofie-core/releases)._
+_In the Sofie-project at NRK we work in sprints, generally 2-3 weeks long and we'll communicate the status of each release here. The releases are also documented [here](https://sofie-automation.github.io/sofie-core//releases)._
 
 _Note: This issue is subject to change and will be updated as development progresses._
 
@@ -30,7 +30,7 @@ Testing is expected to start 2019-01-01
 
 - [ ] Planning
 - [ ] Working on
-- [ ] Features frozen, in testing.  
+- [ ] Features frozen, in testing.
 - [ ] Tests complete, update docs
 - [ ] Released
 
@@ -38,7 +38,7 @@ Testing is expected to start 2019-01-01
 
 _To be announced_
 <!--
-* Add features here [Link name](https://github.com/nrkno/myLink)
+* Add features here [Link name](https://github.com/Sofie-Automation/myLink)
 -->
 
 ## Expected versions of components:
@@ -47,5 +47,5 @@ _To be announced_
 | [Core](https://bit.ly/2yFZA9X) <br/> [Blueprints API ( Core )](https://bit.ly/2Qyrcde) <br/> [Playout Gateway](https://bit.ly/2OKGbzn) <br/> [Mos Gateway](https://bit.ly/2Tc1wR1) | TBD |
 | [Blueprints API ( TSR )](https://bit.ly/2GTAmcF) | TBD |
 | [Spreadsheet Gateway](https://bit.ly/2KB0iL9) | TBD |
-| [Package Manager](https://github.com/nrkno/sofie-package-manager) | TBD |
-| [Input Gateway](https://github.com/nrkno/sofie-input-gateway) | TBD |
+| [Package Manager](https://github.com/Sofie-Automation/sofie-package-manager) | TBD |
+| [Input Gateway](https://github.com/Sofie-Automation/sofie-input-gateway) | TBD |

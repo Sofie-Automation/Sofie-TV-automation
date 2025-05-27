@@ -12,7 +12,7 @@ description: This guide has a lot of links. Here they are all listed by section.
   * [Gateways](getting-started/#gateways)
   * [Blueprints](getting-started/#blueprints)
 
-* Ask questions in the [Sofie Slack Channel](https://join.slack.com/t/sofietv/shared_invite/enQtNTk2Mzc3MTQ1NzAzLTJkZjMyMDg3OGM0YWU3MmU4YzBhZDAyZWI1YmJmNmRiYWQ1OTZjYTkzOTkzMTA2YTE1YjgxMmVkM2U1OGZlNWI) 
+* Ask questions in the [Sofie Slack Channel](https://join.slack.com/t/sofietv/shared_invite/enQtNTk2Mzc3MTQ1NzAzLTJkZjMyMDg3OGM0YWU3MmU4YzBhZDAyZWI1YmJmNmRiYWQ1OTZjYTkzOTkzMTA2YTE1YjgxMmVkM2U1OGZlNWI)
 
 ## Installation & Setup
 
@@ -58,7 +58,7 @@ description: This guide has a lot of links. Here they are all listed by section.
 ## FAQ, Progress, and Issues
 
 * [MIT Licence](https://opensource.org/licenses/MIT)
-* [Road map and Issues page on GitHub](https://github.com/nrkno/Sofie-TV-automation/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3ARelease)
+* [Road map and Issues page on GitHub](https://github.com/Sofie-Automation/Sofie-TV-automation/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3ARelease)
 
 
 

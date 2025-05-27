@@ -10,11 +10,11 @@ _\(TODO: write installation instructions, using docker\)_
 
 ## Manual installation \(for developers\)
 
-1. Clone the [tv-automation-playout-gateway](https://github.com/nrkno/tv-automation-playout-gateway) repository
-2. `cd` into the `tv-automation-playout-gateway` directory
+1. Clone the [sofie-core](https://github.com/Sofie-Automation/sofie-core) repository
+2. `cd` into the `packages/playout-gateway` directory
 3. Run `yarn` to install all dependencies
 4. Run `yarn buildstart -host localhost -port 3000`  to build and start the application. Note: set the host and port to your Server Core application.
 
-The Gateway will now connect to Sever Core and register itself there.  
+The Gateway will now connect to Sever Core and register itself there.
 It should show up in the list of devices under settings \([http://localhost:3000/settings](http://localhost:3000/settings)\), so head over there to set the settings of the device.
 

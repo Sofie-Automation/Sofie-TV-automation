@@ -10,5 +10,5 @@ If you are using the Docker version of Sofie, then the Playout Gateway will come
 
 * [Playout Gateway](https://github.com/nrkno/tv-automation-playout-gateway) GitHub Page for Developers
 
-## 
+##
 

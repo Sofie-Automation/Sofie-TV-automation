@@ -18,7 +18,7 @@ As a minimum a bug report should include the following:
 
 Feel free to include additional information if you have it.
 
-Issues should be reported in our main repository: [https://github.com/nrkno/Sofie-TV-automation/issues](https://github.com/nrkno/Sofie-TV-automation/issues)
+Issues should be reported in our main repository: [https://github.com/Sofie-Automation/Sofie-TV-automation/issues](https://github.com/Sofie-Automation/Sofie-TV-automation/issues)
 
 ### Contributing code
 
@@ -28,5 +28,5 @@ If you believe you have a minor improvement or a bug fix that can be added to th
 
 #### New features or bigger changes
 
-If you're considering a larger contribution, we would love to have a chat beforehand about it to make sure it fits nicely into our own development. Please contact us directly or open an issue for discussion over at [https://github.com/nrkno/Sofie-TV-automation/issues](https://github.com/nrkno/Sofie-TV-automation/issues)
+If you're considering a larger contribution, we would love to have a chat beforehand about it to make sure it fits nicely into our own development. Please contact us directly or open an issue for discussion over at [https://github.com/Sofie-Automation/Sofie-TV-automation/issues](https://github.com/Sofie-Automation/Sofie-TV-automation/issues)
 

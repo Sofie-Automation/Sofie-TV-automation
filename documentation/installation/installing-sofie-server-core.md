@@ -38,4 +38,4 @@ Installation instructions for installing Sofie-Core or the various gateways are 
 Common prerequisites are [Node.js](https://nodejs.org/) and [Yarn](https://yarnpkg.com/).
 Links to the repos are listed at [Applications & Libraries](../under-the-hood/libraries.md).
 
-[Sofie Core GitHub Page for Developers](https://github.com/nrkno/sofie-core)
+[Sofie Core GitHub Page for Developers](https://github.com/Sofie-Automation/sofie-core)

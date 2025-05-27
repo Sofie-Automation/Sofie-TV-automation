@@ -11,7 +11,7 @@ Read more: [_System architecture_](concepts-and-architecture.md#system-architect
 
 Gateways are NodeJS processes that connect to Sofie Core and provide different kinds of functionality.
 Examples of Gateways are the [MOS Gateway](https://github.com/nrkno/tv-automation-mos-gateway), the [Spreadsheet Gateway](https://github.com/SuperFlyTV/spreadsheet-gateway) and the [Playout Gateway](https://github.com/nrkno/tv-automation-playout-gateway).
-All gateways use the [Core-integration library](https://github.com/nrkno/sofie-core-integration) to communicate with Core.
+All gateways use the [Core-integration library](https://github.com/Sofie-Automation/sofie-core-integration) to communicate with Core.
 Read more: [_System architecture_](concepts-and-architecture.md#system-architecture)\_\_
 
 ### Blueprints
