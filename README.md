@@ -21,5 +21,5 @@ _**Sofie**_ is a web-based TV automation system for studios and live shows, used
 ## Code and Releases
 
 - [For developers & integrators](https://sofie-automation.github.io/sofie-core/docs/for-developers/intro/)
-- [Releases](https://sofie-automation.github.io/sofie-core//releases)
+- [Releases](https://sofie-automation.github.io/sofie-core/releases)
 - The main repository is the [Sofie Core monorepo](https://github.com/Sofie-Automation/sofie-core)
